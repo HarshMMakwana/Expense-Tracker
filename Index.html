@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="estyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="totals">
+            <div class="total-item">
+                <h2>Balance: $<span id="totalBalance" class="balance">0</span></h2>
+            </div>
+        </div>
+        <div class="totals">
+            <div class="total-item">
+                <h2>Income: $<span id="totalIncome" class="income">0</span></h2>
+            </div>
+            <div class="total-item">
+                <h2>Expenses: $<span id="totalExpenses" class="expenses">0</span></h2>
+            </div>
+        </div>
+        <div class="expense-form">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <button id="addExpenseBtn">Add</button>
+        </div>
+        <div class="expense-list">
+            <h2>Transactions</h2>
+            <ul id="transactions">
+                <!-- Transactions will be listed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="escripts.js"></script>
+</body>
+</html>
